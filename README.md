@@ -48,7 +48,8 @@ Please make sure to use the OpenAI API responsibly and in accordance with OpenAI
 ## Categories:
 
 Here are the categories:
-1.	Mathematics
+### 1.	Mathematics
+
 1.1.	Arithmetic
 1.2.	Algebra
 1.3.	Geometry
@@ -86,7 +87,9 @@ Here are the categories:
 1.35.	Financial Mathematics
 1.36.	Operation Research
 1.37.	Dynamical Systems
-2.	Science
+
+### 2.	Science
+
 2.1.	Biology
 2.2.	Chemistry
 2.3.	Physics
@@ -124,7 +127,9 @@ Here are the categories:
 2.35.	Actuarial Science
 2.36.	Forensic Science
 2.37.	Data Science
-3.	Humanities
+
+### 3.	Humanities
+
 3.1.	Literature
 3.2.	Philosophy
 3.3.	History
@@ -162,7 +167,9 @@ Here are the categories:
 3.35.	Game Theory 
 3.36.	Gender Studies
 3.37.	Computer Science
-4.	Social Sciences
+
+### 4.	Social Sciences
+
 4.1.	Psychology
 4.2.	Sociology
 4.3.	Economics
@@ -204,7 +211,9 @@ Here are the categories:
 4.39.	Media Studies
 4.40.	Music Theory
 4.41.	Theater and Drama
-5.	Business
+
+### 5.	Business
+
 5.1.	Accounting
 5.2.	Finance
 5.3.	Marketing
@@ -242,7 +251,9 @@ Here are the categories:
 5.35.	Business Development
 5.36.	Leadership Development
 5.37.	Talent Acquisition
-6.	Technology
+
+### 6.	Technology
+
 6.1.	Computer Science
 6.2.	Information Technology
 6.3.	Engineering
@@ -280,7 +291,9 @@ Here are the categories:
 6.35.	Automation
 6.36.	Software Security
 6.37.	Information Security
-7.	Law and Government
+
+### 7.	Law and Government
+
 7.1.	Criminal Justice
 7.2.	International Law
 7.3.	Constitutional Law
