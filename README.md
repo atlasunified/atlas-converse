@@ -22,6 +22,8 @@ Messages sent to the OpenAI API are designed in such a way to guide the AI's res
 
 ## How to Run
 
+Update the `apikey.txt` file with your OpenAI API Key.
+
 To execute the script:
 
 ```bash
