@@ -20,28 +20,32 @@ The script uses the concurrent.futures module to parallelize requests, which spe
 
 Messages sent to the OpenAI API are designed in such a way to guide the AI's responses towards a desired format.
 
-How to Run
+## How to Run
+
 To execute the script:
 
 ```bash
 python3 atlas-instruct.py
 ```
-This will:
+## This will:
 
 Generate the text files with content from OpenAI's API.
 Convert these text files to JSONL format and output to 'output.jsonl'.
 Please ensure you have the OpenAI API key in a file named 'apikey.txt' in the same directory.
 
-Contributing
+## Contributing
+
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-License
+## License
 
 MIT
 
-Disclaimer
+## Disclaimer
 
 Please make sure to use the OpenAI API responsibly and in accordance with OpenAI's use case policy. Be aware that this script may generate a large number of API calls, which could incur costs. Always monitor your usage when working with pay-per-use APIs.
+
+## Categories:
 
 Here are the categories:
 1.	Mathematics
