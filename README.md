@@ -331,7 +331,9 @@ Here are the categories:
 7.35.	Criminal Procedure Law 
 7.36.	Civil Procedure Law 
 7.37.	International Trade Law
-8.	Health and Medicine
+
+### 8.	Health and Medicine
+
 8.1.	Anatomy and Physiology
 8.2.	Pharmacology
 8.3.	Epidemiology
@@ -369,7 +371,9 @@ Here are the categories:
 8.35.	Hematology
 8.36.	Gastroenterology
 8.37.	Rheumatology
-9.	Fine Arts
+
+### 9.	Fine Arts
+
 9.1.	Visual Arts
 9.2.	Music
 9.3.	Theater
@@ -407,7 +411,9 @@ Here are the categories:
 9.35.	Puppet Making
 9.36.	Creative Writing
 9.37.	Pen and Ink Drawing
-10.	Education
+
+### 10.	Education
+
 10.1.	Pedagogy
 10.2.	Curriculum Design
 10.3.	Learning Technologies
@@ -445,7 +451,9 @@ Here are the categories:
 10.35.	Clause and Sentence Structures
 10.36.	Discourse Analysis
 10.37.	Computational Linguistics
-11.	Media and Communication
+
+### 11.	Media and Communication
+
 11.1.	Journalism
 11.2.	Public Relations
 11.3.	Advertising
@@ -483,7 +491,9 @@ Here are the categories:
 11.35.	Computer Vision
 11.36.	Cybersecurity
 11.37.	Data Science
-12.	Environment and Sustainability
+
+### 12.	Environment and Sustainability
+
 12.1.	Environmental Science
 12.2.	Renewable Energy
 12.3.	Sustainability
@@ -521,7 +531,9 @@ Here are the categories:
 12.35.	Marine Science 
 12.36.	Environmental Law 
 12.37.	Environmental Engineering
-13.	Sports and Recreation
+
+### 13.	Sports and Recreation
+
 13.1.	Exercise Science
 13.2.	Sports Medicine
 13.3.	Coaching
@@ -559,7 +571,9 @@ Here are the categories:
 13.35.	Waterskiing & Wakeboarding
 13.36.	Skimboarding
 13.37.	Snowboarding
-14.	Travel and Tourism
+
+### 14.	Travel and Tourism
+
 14.1.	Hospitality
 14.2.	Tourism Management
 14.3.	Destination Marketing
@@ -597,7 +611,9 @@ Here are the categories:
 14.35.	Travel Writing 
 14.36.	Social Media Marketing 
 14.37.	Tourism Policy and Research
-15.	Food and Beverage
+
+### 15.	Food and Beverage
+
 15.1.	Culinary Arts
 15.2.	Food Science
 15.3.	Beverage Management
@@ -635,7 +651,9 @@ Here are the categories:
 15.35.	Middle Eastern Cuisine
 15.36.	African Cuisine
 15.37.	Indian Cuisine
-16.	Religion and Spirituality
+
+### 16.	Religion and Spirituality
+
 16.1.	Religious Studies
 16.2.	Theology
 16.3.	Comparative Religion
@@ -673,7 +691,9 @@ Here are the categories:
 16.35.	Religion and Environment
 16.36.	Religion and Health
 16.37.	Religious Counseling and Therapy
-17.	Philosophy and Ethics
+
+### 17.	Philosophy and Ethics
+
 17.1.	Epistemology
 17.2.	Metaphysics
 17.3.	Ethics
@@ -711,7 +731,9 @@ Here are the categories:
 17.35.	Philosophy of Emotions
 17.36.	Philosophy of Consciousness
 17.37.	Social and Political Philosophy
-18.	Languages and Linguistics
+
+### 18.	Languages and Linguistics
+
 18.1.	Language Learning
 18.2.	Linguistic Theory
 18.3.	Translation and Interpretation
@@ -749,7 +771,9 @@ Here are the categories:
 18.35.	Language Policy and Planning
 18.36.	Forensic Linguistics
 18.37.	Neurolinguistics
-19.	Design and Architecture
+
+### 19.	Design and Architecture
+
 19.1.	Industrial Design
 19.2.	Architecture
 19.3.	Graphic Design
@@ -787,7 +811,9 @@ Here are the categories:
 19.35.	Exhibition Stand Design
 19.36.	Graphic Communication Design
 19.37.	Design for Education and Learning
-20.	Fashion and Apparel
+
+### 20.	Fashion and Apparel
+
 20.1.	Fashion Design
 20.2.	Fashion Merchandising
 20.3.	Textile Science
@@ -825,7 +851,9 @@ Here are the categories:
 20.35.	Fashion Product Development
 20.36.	Fashion Retail Buying
 20.37.	Fashion E-commerce
-21.	Transportation and Logistics
+
+### 21.	Transportation and Logistics
+
 21.1.	Transportation Systems
 21.2.	Logistics and Supply Chain Management
 21.3.	Traffic Engineering
@@ -863,7 +891,9 @@ Here are the categories:
 21.35.	Warehouse Layout Optimization
 21.36.	Inventory Forecasting and Planning
 21.37.	Air Traffic Control
-22.	Military and Defense
+
+### 22.	Military and Defense
+
 22.1.	Military Strategy
 22.2.	Military History
 22.3.	Weapons and Technology
@@ -901,7 +931,9 @@ Here are the categories:
 22.35.	Military Occupational Specialties and Job Training
 22.36.	Military Psychological Operations
 22.37.	Military Infrastructure and Base Operations
-23.	Anthropology and Archaeology
+
+### 23.	Anthropology and Archaeology
+
 23.1.	Cultural Anthropology
 23.2.	Archaeological Science
 23.3.	Biological Anthropology
@@ -939,7 +971,9 @@ Here are the categories:
 23.35.	Prehistoric Archaeology
 23.36.	Classical Archaeology
 23.37.	Industrial Archaeology
-24.	Psychology and Mental Health
+
+### 24.	Psychology and Mental Health
+
 24.1.	Clinical Psychology
 24.2.	Neuropsychology
 24.3.	Behavioral Neuroscience
@@ -977,7 +1011,9 @@ Here are the categories:
 24.35.	Psycholinguistics
 24.36.	Psychometrics
 24.37.	Parapsychology
-25.	Artificial Intelligence and Machine Learning
+
+### 25.	Artificial Intelligence and Machine Learning
+
 25.1.	Machine Learning Algorithms
 25.2.	Natural Language Processing
 25.3.	Computer Vision
@@ -1027,7 +1063,9 @@ Here are the categories:
 25.47.	Robot Localization and Mapping
 25.48.	Robot Control Systems
 25.49.	Reinforcement Learning for Robotics
-26.	Neuroscience and Brain Science
+
+### 26.	Neuroscience and Brain Science
+
 26.1.	Cognitive Neuroscience
 26.2.	Behavioral Neuroscience
 26.3.	Neuroimaging
@@ -1065,7 +1103,9 @@ Here are the categories:
 26.35.	Neurotransmitters and Receptors
 26.36.	Neuromodulation Techniques
 26.37.	Neurological Data Analysis
-27.	Energy and Power Systems
+
+### 27.	Energy and Power Systems
+
 27.1.	Renewable Energy Technologies
 27.2.	Power Electronics
 27.3.	Energy Storage
@@ -1103,7 +1143,9 @@ Here are the categories:
 27.35.	Energy Harvesting Technologies
 27.36.	Grid Integration of Energy Storage Systems
 27.37.	Resilient Power Systems
-28.	Materials Science and Engineering
+
+### 28.	Materials Science and Engineering
+
 28.1.	Nanomaterials
 28.2.	Polymers
 28.3.	Composites
@@ -1141,7 +1183,9 @@ Here are the categories:
 28.35.	Thermoforming
 28.36.	Compression Molding
 28.37.	Rotational Molding
-29.	Quantum Science and Technology
+
+### 29.	Quantum Science and Technology
+
 29.1.	Quantum Computing
 29.2.	Quantum Communication
 29.3.	Quantum Sensors
@@ -1179,7 +1223,9 @@ Here are the categories:
 29.35.	Quantum Material Integration
 29.36.	Quantum Material Testing
 29.37.	Quantum Material Optimization
-30.	Environmental Science and Engineering
+
+### 30.	Environmental Science and Engineering
+
 30.1.	Environmental Chemistry
 30.2.	Environmental Biology
 30.3.	Water Resources Engineering
@@ -1217,7 +1263,9 @@ Here are the categories:
 30.35.	Environmental Impact Mitigation
 30.36.	Environmental Modeling and Simulation
 30.37.	Environmental Ethics and Governance
-31.	Genetics and Genomics
+
+### 31.	Genetics and Genomics
+
 31.1.	Molecular Genetics
 31.2.	Genomic Medicine
 31.3.	Epigenetics
@@ -1255,7 +1303,9 @@ Here are the categories:
 31.35.	Genomic Data Sharing
 31.36.	Genomic Data Security
 31.37.	Genomic Data Interpretation
-32.	Evolution and Ecology
+
+### 32.	Evolution and Ecology
+
 32.1.	Evolutionary Biology
 32.2.	Ecology
 32.3.	Conservation Biology
@@ -1293,7 +1343,9 @@ Here are the categories:
 32.35.	Species Interactions
 32.36.	Trophic Dynamics
 32.37.	Comparative Genomics
-33.	Biomedical Sciences
+
+### 33.	Biomedical Sciences
+
 33.1.	Biochemistry
 33.2.	Pharmacology
 33.3.	Immunology
@@ -1331,7 +1383,9 @@ Here are the categories:
 33.35.	Anesthesiology
 33.36.	Radiology
 33.37.	Emergency Medicine
-34.	Biotechnology and Biomanufacturing
+
+### 34.	Biotechnology and Biomanufacturing
+
 34.1.	Genetic Engineering
 34.2.	Cell Culture Technology
 34.3.	Downstream Processing
@@ -1369,7 +1423,9 @@ Here are the categories:
 34.35.	Industrial Microbiology
 34.36.	Plant Biotechnology
 34.37.	Environmental Biotechnology
-35.	Neuroscience and Behavior
+
+### 35.	Neuroscience and Behavior
+
 35.1.	Neurophysiology
 35.2.	Developmental Neuroscience
 35.3.	Systems Neuroscience
@@ -1412,7 +1468,9 @@ Here are the categories:
 36.35.	Nuclear Reactions in Astrophysical Environments
 36.36.	Gamma-Ray Astronomy
 36.37.	Cosmic Ray Astrophysics
-37.	Condensed Matter Physics
+
+### 37.	Condensed Matter Physics
+
 37.1.	Solid State Physics
 37.2.	Semiconductor Physics
 37.3.	Superconductivity
@@ -1450,7 +1508,9 @@ Here are the categories:
 37.35.	Thermophysics
 37.36.	Spectroscopy
 37.37.	Quantum Optics
-38.	Particle Physics and High-Energy Physics
+
+### 38.	Particle Physics and High-Energy Physics
+
 38.1.	Quantum Field Theory
 38.2.	Particle Accelerators
 38.3.	Dark Matter
@@ -1488,7 +1548,9 @@ Here are the categories:
 38.35.	Nanotechnology
 38.36.	Quantum Computing
 38.37.	Surface Physics
-39.	Mathematical Sciences
+
+### 39.	Mathematical Sciences
+
 39.1.	Number Theory
 39.2.	Topology
 39.3.	Analysis
@@ -1526,7 +1588,9 @@ Here are the categories:
 39.35.	Number Theory
 39.36.	Trigonometry
 39.37.	Fractal Geometry
-40.	Data Science and Analytics
+
+### 40.	Data Science and Analytics
+
 40.1.	Statistical Learning
 40.2.	Data Mining
 40.3.	Big Data Analytics
@@ -1564,7 +1628,9 @@ Here are the categories:
 40.35.	Data Mining Techniques
 40.36.	Data Analysis Algorithms
 40.37.	Data Modeling and Simulation
-41.	Operations Research and Optimization
+
+### 41.	Operations Research and Optimization
+
 41.1.	Linear Programming
 41.2.	Network Optimization
 41.3.	Nonlinear Optimization
