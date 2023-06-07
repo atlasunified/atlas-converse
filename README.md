@@ -1426,13 +1426,48 @@ Here are the categories:
 34.36.	Plant Biotechnology
 34.37.	Environmental Biotechnology
 
-### 35.	Neuroscience and Behavior
+### 35	Genetics and Molecular Biology
 
-35.1.	Neurophysiology
-35.2.	Developmental Neuroscience
-35.3.	Systems Neuroscience
-35.4.	Behavioral Neurobiology
-36.	Astronomy and Astrophysics
+35.1	DNA Extraction
+35.2	PCR Amplification
+35.3	DNA Sequencing
+35.4	Gene Expression Analysis
+35.5	Genetic Engineering Techniques
+35.6	Genomic Library Construction
+35.7	Restriction Enzyme Analysis
+35.8	Transfection Methods
+35.9	Cloning and Recombinant DNA Techniques
+35.10	DNA Fingerprinting
+35.11	Microarray Analysis
+35.12	RNA Interference (RNAi)
+35.13	Gene Knockout Techniques
+35.14	Mutagenesis Techniques
+35.15	Genomic Data Analysis
+35.16	Next-Generation Sequencing (NGS)
+35.17	Gene Regulation Studies
+35.18	Protein Purification Techniques
+35.19	Enzyme Kinetics Assays
+35.20	Protein Structure Prediction
+35.21	Protein-Protein Interaction Analysis
+35.22	Protein-DNA Interaction Analysis
+35.23	Genomic Editing Techniques (CRISPR-Cas9)
+35.24	Gene Therapy Approaches
+35.25	Molecular Diagnostic Techniques
+35.26	Epigenetics Studies
+35.27	Transcriptional Regulation Analysis
+35.28	Translation and Protein Synthesis Studies
+35.29	DNA Repair Mechanisms
+35.30	Comparative Genomics Analysis
+35.31	RNA-Seq Analysis
+35.32	Metagenomics Analysis
+35.33	Phylogenetic Analysis
+35.34	Functional Genomics Studies
+35.35	Chromosome Analysis
+35.36	DNA Methylation Analysis
+35.37	Genomic Imprinting Studies
+
+### 36.	Astronomy and Astrophysics
+
 36.1.	Stellar Astrophysics
 36.2.	Galactic Astronomy
 36.3.	Cosmology
@@ -1670,3 +1705,4 @@ Here are the categories:
 41.35.	Knowledge Representation and Reasoning
 41.36.	Logistics Systems Models
 41.37.	Computer-Aided Design
+
