@@ -2,6 +2,12 @@
 
 This repository contains a Python script that utilizes OpenAI's GPT-3.5-turbo model to generate text content based on a list of topics and subtopics, and subsequently converts this text content into a JSON Lines (JSONL) format.
 
+## Dataset
+
+Some outputs of this data are located here:
+
+[Atlas Unified HuggingFace](https://huggingface.co/datasets/AtlasUnified/15k-self-instruct)
+
 ## Overview
 
 The script carries out the following tasks:
