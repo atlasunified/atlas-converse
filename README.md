@@ -55,7 +55,8 @@ Please make sure to use the OpenAI API responsibly and in accordance with OpenAI
 
 ## Categories:
 
-Here are the categories:
+This list is missing Neuroscience and Behavior. Here are the categories:
+
 ### 1.	Mathematics
 
 1.1.	Arithmetic
