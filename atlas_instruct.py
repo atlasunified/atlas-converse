@@ -4,8 +4,11 @@ import json
 import re
 import concurrent.futures
 import time
+import queue
 
 MAX_RETRIES = 5
+MAX_WORKERS = 10  # Maximum number of simultaneous tasks
+tasks_dict = {}
 
 def generate_text_files():
     # Read the API key from 'apikey.txt'
@@ -16,36 +19,34 @@ def generate_text_files():
     with open('topics_subtopics.jsonl', 'r') as f:
         lines = f.readlines()
 
-    with concurrent.futures.ThreadPoolExecutor() as executor:
-        tasks = []
-        for line in lines:
-            topic_data = json.loads(line)
-            topic = topic_data["topic"]
-            subtopics = topic_data["subtopics"]
+    tasks = queue.Queue()
+    for line in lines:
+        topic_data = json.loads(line)
+        topic = topic_data["topic"]
+        subtopics = topic_data["subtopics"]
 
-            for subtopic in subtopics:
-                task = {
-                    "topic": topic,
-                    "subtopic": subtopic,
-                    "retries": MAX_RETRIES
-                }
-                future = executor.submit(make_request, task)
-                tasks.append(future)
+        for subtopic in subtopics:
+            task = {
+                "topic": topic,
+                "subtopic": subtopic,
+                "retries": MAX_RETRIES,
+            }
+            # Check if the file for this task already exists
+            if not os.path.exists(f'output/{topic}_{subtopic}.txt'):
+                tasks.put(task)
+            else:
+                print(f"Skipping task for topic '{topic}' and subtopic '{subtopic}' as it has already been processed.")
 
-        while tasks:
-            done, tasks = concurrent.futures.wait(tasks, return_when=concurrent.futures.FIRST_COMPLETED)
-
+    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        futures = [executor.submit(make_request, tasks.get()) for _ in range(min(tasks.qsize(), MAX_WORKERS))]  # Start with min of MAX_WORKERS or tasks.qsize() tasks
+        while True:
+            done, _ = concurrent.futures.wait(futures, return_when=concurrent.futures.FIRST_COMPLETED)  # Wait for at least one task to complete
             for future in done:
-                if future.exception():
-                    task = future.result()
-                    if task["retries"] > 0:
-                        task["retries"] -= 1
-                        print(f"Error on topic '{task['topic']}' and subtopic '{task['subtopic']}', retrying. {task['retries']} retries left.")
-                        tasks.add(executor.submit(make_request, task))
-                    else:
-                        print(f"Error on topic '{task['topic']}' and subtopic '{task['subtopic']}', no retries left.")
-                else:
-                    print(f"Completed topic '{future.result()['topic']}' and subtopic '{future.result()['subtopic']}'.")
+                futures.remove(future)  # Remove completed tasks from futures list
+            if tasks.empty() and not futures:  # If no more tasks and all futures are done
+                break
+            while tasks.qsize() > 0 and len(futures) < MAX_WORKERS:  # If there are tasks left and we haven't reached MAX_WORKERS yet
+                futures.append(executor.submit(make_request, tasks.get()))  # Start new tasks
 
 def make_request(task):
     topic = task["topic"]
@@ -75,8 +76,10 @@ def make_request(task):
     except Exception as e:
         print(f"Exception occurred for topic '{topic}' and subtopic '{subtopic}'.")
         task["exception"] = e
-    finally:
-        return task
+        if retries > 0:
+            print(f"Retrying task for topic '{topic}' and subtopic '{subtopic}', retries left: {retries-1}")
+            task["retries"] = retries - 1
+            make_request(task)
 
 task_id_counter = 0  # Global counter for task IDs
 
@@ -114,13 +117,27 @@ def text_to_jsonl(dir_path, output_file):
                     valid_json = entry.replace("'", '"')
                     jsonl_file.write(valid_json + "\n")
 
-            os.remove(os.path.join(dir_path, text_file))  # delete the txt file after converting
+            # os.remove(os.path.join(dir_path, text_file))  # delete the txt file after converting
 
 def main():
     generate_text_files()
     dir_path = 'output/'
     output_file = 'output.jsonl'
     text_to_jsonl(dir_path, output_file)
+
+    # Check if all tasks are done
+    not_done = [task for task, done in tasks_dict.items() if not done]
+    if not_done:
+        print(f"Following tasks were not completed: {not_done}")
+    else:
+        print("All tasks have been completed successfully.")
+
+    # Check if all files are in the output
+    for task in tasks_dict.keys():
+        if not os.path.isfile(f"{dir_path}{task}.txt"):
+            print(f"Output file for task {task} does not exist.")
+        else:
+            print(f"Output file for task {task} is successfully written.")
 
 if __name__ == "__main__":
     main()
