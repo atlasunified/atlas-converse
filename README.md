@@ -1,45 +1,29 @@
-# atlas-instruct
+# atlas-coinverse
 
-This repository contains a Python script that utilizes OpenAI's GPT-3.5-turbo model to generate text content based on a list of topics and subtopics, and subsequently converts this text content into a JSON Lines (JSONL) format.
+This repository contains a Python script that utilizes OpenAI's GPT-3.5-turbo model to generate text content based on a list of topics and subtopics, and subsequently converts this text content into a JSON format extremely well.
 
 ## Dataset
 
 Some outputs of this data are located here:
 
-[Atlas Unified HuggingFace](https://huggingface.co/datasets/AtlasUnified/15k-self-instruct)
+[Atlas Unified HuggingFace](https://huggingface.co/datasets/AtlasUnified/atlas-converse)
 
 ## Overview
 
-The script carries out the following tasks:
+This code performs the following tasks:
 
-It reads a list of topics and subtopics from a JSON Lines file.
-For each topic and subtopic pair, it makes a request to OpenAI's API to generate a response from the GPT-3.5-turbo model.
-The responses are saved to individual text files, named after their respective topic and subtopic.
-After all text files have been generated, they are processed and converted into a JSON Lines format.
-The processed content is written to a new JSONL file.
-Key Features
-The script is designed to be robust to transient errors. It will retry failed requests up to a predefined maximum number of times.
+It reads an API key from the 'apikey.txt' file and sets it for the OpenAI library.
+It reads a JSONL file named 'topics_subtopics.jsonl' that contains topics and subtopics data.
+It creates tasks based on the topics and subtopics read from the file, and adds them to a queue for processing.
+It uses a ThreadPoolExecutor with a maximum number of workers to concurrently process the tasks.
+Each task is processed by the make_request function, which sends a request to the OpenAI Chat API.
+The response from the API is written to a text file named after the topic and subtopic.
+If there is an exception during the request, the task is retried a maximum of 5 times.
+After all tasks are completed, the generated text files are converted to a single JSON file named 'combined-convo.json' using the text_to_json function.
+The code checks if the output file exists and prints a success message if it does.
+The main function calls the necessary functions in the required order to execute the entire process.
 
-The generated text is cleansed and reformatted to a standardized format.
-
-The script uses the concurrent.futures module to parallelize requests, which speeds up the generation process when dealing with a large number of topics and subtopics.
-
-Messages sent to the OpenAI API are designed in such a way to guide the AI's responses towards a desired format.
-
-## How to Run
-
-Update the `apikey.txt` file with your OpenAI API Key.
-
-To execute the script:
-
-```bash
-python3 atlas-instruct.py
-```
-## This will:
-
-Generate the text files with content from OpenAI's API.
-Convert these text files to JSONL format and output to 'output.jsonl'.
-Please ensure you have the OpenAI API key in a file named 'apikey.txt' in the same directory.
+Note: The code assumes the presence of certain files ('apikey.txt' and 'topics_subtopics.jsonl') and directories ('output/') for proper execution.
 
 ## Contributing
 
