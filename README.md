@@ -23,6 +23,15 @@ After all tasks are completed, the generated text files are converted to a singl
 The code checks if the output file exists and prints a success message if it does.
 The main function calls the necessary functions in the required order to execute the entire process.
 
+This is the main driver of the coding, this prompt:
+
+```
+messages = [
+            {"role": "system", "content": "You are an intellectual conversation bot. Your job is to execute the users requests without responding with any jargon like, 'sure, I can help, what would you like to know'. Your strength is in brevity and answering directly."},
+            {"role": "user", "content": f"You will create meaningful conversations between a user and an AI. The conversation length is 3,000 tokens long. The conversation from the user must be complex, at the PhD level in content, and lengthy and the conversation must conclude at the end with an understanding of the topic. Do not deviate from the JSONL format of {json.dumps({'id': 'string', 'conversations': [{'from': 'string', 'value': 'string'}]})} and only create one singular JSONL. The topic is '{topic}' and the subtopic is '{subtopic}'."},
+        ]
+```
+
 Note: The code assumes the presence of certain files ('apikey.txt' and 'topics_subtopics.jsonl') and directories ('output/') for proper execution.
 
 ## Contributing
