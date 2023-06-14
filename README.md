@@ -1,4 +1,4 @@
-# atlas-coinverse
+# atlas-converse
 
 This repository contains a Python script that utilizes OpenAI's GPT-3.5-turbo model to generate text content based on a list of topics and subtopics, and subsequently converts this text content into a JSON format extremely well.
 
